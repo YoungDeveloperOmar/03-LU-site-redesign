@@ -1,33 +1,162 @@
 /* Base Styles */
 body {
-  color: royalblue;
+  margin: 0;
+  color: #2f2f2f;
   text-align: center;
-  background-color: bisque;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: #fffaf6;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
 /* Typography */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin-top: 12px;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
 
 /* Links & Accents */
+a {
+  color: #c65d7b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.accent {
+  color: #c65d7b;
+}
 
 /* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* Hero Section */
+header {
+  background: linear-gradient(to right, #fde2e4, #fff1f2);
+  padding: 64px 24px;
+}
+
+.tagline {
+  margin-top: 12px;
+  color: #555;
+}
+
+#hero-container {
+  padding: 40px 24px;
+}
+
+.hero-img {
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
 
 /* Main Content */
+main {
+  padding: 64px 24px;
+}
+
+section {
+  margin-bottom: 80px;
+}
 
 /* About Section */
+.about-us p {
+  font-size: 1rem;
+}
 
 /* Specials Section */
+.specials-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.special-offer {
+  background-color: #ffffff;
+  padding: 24px;
+  width: 260px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.special-offer:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.price-now {
+  font-weight: 600;
+  color: #c65d7b;
+  font-size: 1.1rem;
+}
+
+.price-was {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
 
 /* Visit Us Section */
+.visit-us .contact-info {
+  margin-bottom: 24px;
+}
+
+.address-block,
+.phone-block {
+  margin-top: 8px;
+}
 
 iframe {
   width: 100%;
+  max-width: 900px;
   height: 350px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
   margin-top: 48px;
+  background-color: #fde2e4;
+  padding: 32px 24px;
+}
+
+footer p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #555;
 }
